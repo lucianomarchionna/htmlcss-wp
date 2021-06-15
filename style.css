@@ -22,13 +22,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.border-radius{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 /* common */
 
 /* header */
-
-header{
-    margin-bottom: 30px;
-}
 
 .menu{
     margin-bottom: 30px;
@@ -64,6 +64,8 @@ nav li a{
 
 /* header */
 
+/* main */
+
 .banner{
     /* imposto l'altezza del mio div "banner" a 500px */
     height: 650px;
@@ -77,8 +79,6 @@ nav li a{
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 
 .banner img{
@@ -102,33 +102,67 @@ nav li a{
 }
 
 .container-main{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
-    background-color: blue;
     margin-bottom: 30px;
 }
 
 .top{
     width: 100%;
     height: 80px;
-    background-color: lightskyblue;
 }
 
-.sidebar,
+.top>h3{
+    font-size: 35px;
+}
+
+.top>p{
+    color: #858585;
+}
+
+.sidebar-left,
+.sidebar-right,
 .content{
     float: left;
-    background-color: lightskyblue;
 }
 
-.sidebar{
-    width: calc(100% / 5 - 20px);
+.sidebar-left{
+    height: 300px;
+    width: calc(100% / 5);
     margin: 20px 0px;
+}
+
+.sidebar-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content{
     width: calc((100% / 5 ) * 3);
-    margin: 20px;
+    height: 300px;
+    padding: 20px;
 }
+
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-right{
+    height: 300px;
+    width: calc(100% / 5);
+    margin: 20px 0px;
+}
+
+.sidebar-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* main */
 
 footer{
     width: 100%;
