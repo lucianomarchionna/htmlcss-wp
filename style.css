@@ -1,0 +1,101 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global */
+
+/* common */
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* common */
+
+/* header */
+
+header{
+    margin-bottom: 30px;
+}
+
+.menu{
+    margin-bottom: 30px;
+}
+
+#logo img{
+    height: 110px;
+    padding: 20px;
+    border-right: 1px solid #e5e5e5;
+}
+
+nav{
+    margin: 40px 0;
+
+}
+
+nav li{
+    /* porto gli elementi della lista in riga */
+    display: inline;
+    /* nel caso in cui il testo non fosse inserito in maiuscolo lo fa in automatico */
+    text-transform: uppercase;
+    /* elimina i pallini vicino agli elementi */
+    list-style: none; 
+    /* lo uso per separare ulteriormente gli elementi */
+    padding-right: 10px;
+}
+
+nav li a{
+    /* elimina la sottolineatura agli elementi */
+    text-decoration: none;
+    color: #858585;
+}
+
+/* header */
+
+
+.container-main{
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 30px;
+}
+
+.top{
+    width: 100%;
+    height: 80px;
+    background-color: lightskyblue;
+}
+
+.sidebar,
+.content{
+    float: left;
+    background-color: lightskyblue;
+}
+
+.sidebar{
+    width: calc(100% / 5 - 20px);
+    margin: 20px 0px;
+}
+
+.content{
+    width: calc((100% / 5 ) * 3);
+    margin: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: indigo;
+    margin-bottom: 30px;
+}
