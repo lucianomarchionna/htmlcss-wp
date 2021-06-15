@@ -64,8 +64,45 @@ nav li a{
 
 /* header */
 
+.banner{
+    /* imposto l'altezza del mio div "banner" a 500px */
+    height: 650px;
+    position: relative;
+    color: white;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.banner img{
+    /* dico alla immagine inserita nel div "banner" di occupare l'intera sezione tramite height e width */
+    width: 100%;
+    height: 100%;
+    /* dico di adattare l'immagine allo spazio che possiede facendolo tagliare e riadattare */
+    object-fit: cover;
+}
+
+#banner-text{
+    width: 50%;
+    position: absolute;
+    bottom: 40px;
+    margin-left: 50px;
+}
+
+#banner-text>h3{
+    font-size: 35px;
+    font-weight: 500;
+}
 
 .container-main{
+    margin-top: 50px;
     width: 100%;
     background-color: blue;
     margin-bottom: 30px;

@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- importo un font da google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Struttura Wordpress</title>
 </head>
 <body>
+
     <div id="container">
+
         <!-- header -->
         <header>
             <div class="menu">
@@ -32,8 +34,20 @@
 
         </header>
         <!-- /header -->
+
         <!-- main -->
         <main>
+
+            <div class="banner">
+                <!-- creato per aggiungere opacità al banner e rendere più visibile il "banner-text" -->
+                <div class="overlay"></div>
+                <img src="img/banner.jpg" alt="Banner">
+                <div id="banner-text">
+                    <h3>Pretium ac placerat dui interdum nunc in eros urna morbi</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi omnis laborum doloremque aliquid dicta similique ullam esse! Quis optio sint fuga, consectetur saepe asperiores cum, perferendis alias inventore molestias quas!</p>
+                </div>
+            </div>
+
             <div class="container-main clearfix">
                 <div class="top"></div>
                 <div class="sidebar">
@@ -55,6 +69,7 @@
             </div>
         </main>
         <!-- /main -->
+
         <!-- footer -->
         <footer>
 
